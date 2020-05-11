@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<img src="peacock.png" style="width:80px;">
+		</div>
+		<div class="nav-links" id="navBar">
+			<i class="fa fa-close" onclick="closeMenu()"></i>
+			<ul>
+				<a href="ResturantHomePage.html"><li>HOME</li></a>
+				<a href="Menu.html"><li>MENU</li></a>
+				<a href="about.html"><li>ABOUT US</li></a>
+				<a href="contact.html"><li>CONTACTS</li></a>
+			</ul>
+			<button type="button" class="btn">SIGN UP</button>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()" ></i>
+	</div>
+	<div class="banner-title">
+		<h1> <span>MENU</span><br>🌶️</h1>
+    </div>
+
+	<div class="myMenu" >
+        <table class="menuTable">
+           <tr>
+                <th>Item:</th>
+                <th>Description</th>
+                <th>Price</th>
+           </tr>
+           <tr>
+               <td>Nepali Thali</td>
+               <td>A traditional Nepali set, which is a staple food in Nepal<br> that consists of rice, lentil, vegetables, achar(fermented pickle) and choice of your meat(chicken,mutton,fish)</td>
+               <td>$12.99</td>
+		   </tr>
+		   <tr>
+			   <td>Sekuwa</td>
+			   <td> (chicken,mutton,buffalo) roasted in a firewood blended natural herbs and spices in Nepalese country style.</td>
+			   <td>$9.99</td>
+		   </tr>
+		  
+		   <tr>
+			   <td>Tandoori</td>
+			   <td>Roasted chicken marinated in yogurt and spices in a clay oven</td>
+			   <td>$11.99</td>
+		   </tr>
+
+		   <tr>
+			   <td>Momo</td>
+			   <td>One of the most popular Nepalese dish, <br>which is a dumpling made with spices and serverd with diffrent variations of sauces.</td>
+			   <td>$7.99</td>
+		   </tr>
+
+		   <tr>
+			   <td>Thukpa</td>
+			   <td> Tibetan Noodle soup with stew, hot and spicy</td>
+			   <td>$9.99</td>
+		   </tr>
+
+		   <tr>
+			   <td>Chowmein</td>
+			   <td>Chinese stir fried noodles with choice of your meat.</td>
+			   <td>$8.99</td>
+		   </tr>
+		   <tr>
+			   <td>Lassi</td>
+			   <td>Yougurt based drink, very popular in southern Asia served with variety of flavors (mango,cashew,strawberry)</td>
+			   <td>$4.99</td>
+		   </tr>
+        
+		</table>
+		
+		<p>If you wish to learn more about <a href="https://en.wikipedia.org/wiki/List_of_Nepalese_dishes">Nepalese dishes </a> and <a href="https://www.india.com/food/10-dishes-from-south-asia-that-you-must-try-at-least-once-410553/"> South Asia dishes.</a></p>
+
+    </div>
+	
+	<div class="vertical-bar">
+		<div class="search-icon">
+			<i class="fa fa-th-list"></i>
+			<i class="fa fa-search"></i>
+
+		</div>
+		<div class="social-icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-pinterest"></i>
+		</div>
+	</div>
+
+	
+</div>
+<script>
+	var show = document.getElementById("navBar");
+	function showMenu(){
+		show.style.right = "0";
+	}
+	function closeMenu(){
+		show.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>

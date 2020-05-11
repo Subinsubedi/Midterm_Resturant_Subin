@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styleHomepage.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<img src="peacock.png" style="width:80px;">
+		</div>
+		<div class="nav-links" id="navBar">
+			<i class="fa fa-close" onclick="closeMenu()"></i>
+			<ul>
+				<a href="ResturantHomePage.html"><li>HOME</li></a>
+				<a href="Menu.html"><li>MENU</li></a>
+				<a href="about.html"><li>ABOUT US</li></a>
+				<a href="contact.html"><li>CONTACTS</li></a>
+			</ul>
+			<button type="button" class="btn">SIGN UP</button>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()" ></i>
+	</div>
+	<div class="banner-title">
+		<h1>नमस्ते, If you like <span>spicy food,</span><br> Welcome 🌶️</h1>
+		<button type="button" class="btn">Explore</button>
+	</div>
+	
+	<div class="vertical-bar">
+		<div class="search-icon">
+			<i class="fa fa-th-list"></i>
+			<i class="fa fa-search"></i>
+
+		</div>
+		<div class="social-icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-pinterest"></i>
+		</div>
+	</div>
+
+	<div class="notifications">
+		<div class="contents" style="text-align: center;">
+			<small>NAMASTE</small>
+		</div>
+		<div class="notification-img">
+			<img src="something.png">
+		</div>
+	</div>
+</div>
+<script>
+	var show = document.getElementById("navBar");
+	function showMenu(){
+		show.style.right = "0";
+	}
+	function closeMenu(){
+		show.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
